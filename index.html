@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>popup</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>login page</h1>
+    </div>
+
+    <div class="main">
+        <div>
+            <button id="openmodal" onclick="login()">login</button>
+        </div>
+    </div>
+
+
+
+    <!-- empty container -->
+    <div class="container" id="container">
+
+    </div>
+
+    <!-- opened popup code-->
+    <div class="popup" id="popup">
+        <div class="popup-header">
+            <img src="./images/lock-solid.svg" class="icon">
+            <p>LOGIN</p>
+            <a href="#" class="cancel" onclick="cancel()">X</a>
+        </div>
+
+        <div class="popup-content">
+            <form>
+                <p>
+                    <label for="text">Email adderss</label><br>
+                    <div>
+                        <span><img src="./images/envelope-solid.svg" alt="" class="icon icon-box"></span>
+                        <span><input type="text" name="" class="forminput" placeholder="Enter email"><br></span>
+                    </div>
+                    <label for="text"><small id="small">We'll never share your email with anyone else.</small></label><br>
+                </p>
+
+                <p>
+                    <label for="text">Password</label><br>
+                    <img src="./images/unlock-solid.svg" alt="" class="icon icon-box">
+                    <input type="text" name="" class="forminput" placeholder="Password"><br>
+                </p>
+                <input type="checkbox">
+                <label for="tetx">Remember me</label>
+            </form>
+        </div>
+
+        <div class="popup-footer">
+            <button id="save">Sign-in</button>
+            <button id="close" class="cancel" onclick="cancel()">Cancel</button>
+
+
+        </div>
+    </div>
+
+    <script src="./js/script.js "></script>
+
+</body>
+
+</html>
